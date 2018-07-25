@@ -14,7 +14,9 @@ import { RegisterComponent } from './login/register.component';
 import { APP_ROUTES } from './app.routes';
 
 
+// Servicios
 
+import { ServiceModule } from './services/service.module';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import { APP_ROUTES } from './app.routes';
   imports: [
     BrowserModule,
     PagesModule,
+    ServiceModule,
     APP_ROUTES
   ],
   providers: [],
