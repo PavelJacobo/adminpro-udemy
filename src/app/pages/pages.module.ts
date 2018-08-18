@@ -8,6 +8,10 @@ import { PAGES_ROUTES } from './pages.routes';
 import { BrowserModule } from '@angular/platform-browser';
 
 
+// Pipes
+import { PipesModule } from '../pipes/pipes.module';
+
+
 
 
 // Temporal
@@ -22,6 +26,7 @@ import { ChartsModule } from 'ng2-charts';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 
@@ -36,7 +41,8 @@ import { RxjsComponent } from './rxjs/rxjs.component';
     GraficoDonaComponent,
     AccountSettingsComponent,
     PromesasComponent,
-    RxjsComponent
+    RxjsComponent,
+    ProfileComponent
   ],
   exports: [
     PagesComponent,
@@ -51,6 +57,7 @@ import { RxjsComponent } from './rxjs/rxjs.component';
     FormsModule,
     ChartsModule,
     PAGES_ROUTES,
+    PipesModule,
     BrowserModule
   ]
 })

@@ -7,10 +7,16 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 
+//  PIPES
+
+import { PipesModule } from '../pipes/pipes.module';
+
+
 
 @NgModule({
   imports: [
       RouterModule,
+      PipesModule,
       CommonModule
   ],
   declarations: [
