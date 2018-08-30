@@ -11,7 +11,7 @@ import Swal from 'sweetalert2';
 export class ProfileComponent implements OnInit {
   usuario: Usuario;
   imagenSubir: File;
-  imagenTemp: string;
+  imagenTemp: string | ArrayBuffer | null;
   constructor(
     public _usuarioService: UsuarioService
   ) {
